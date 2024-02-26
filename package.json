@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true next dev",
+    "build": "NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@module-federation/nextjs-mf": "^8.1.10",
+    "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "require": "^2.4.20",
+    "webpack": "^5.90.3"
   },
   "devDependencies": {
     "eslint": "^8",
